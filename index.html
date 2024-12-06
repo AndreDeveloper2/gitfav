@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Git favorites</title>
+  <link href="./output.css" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script type="module" src="./main.js" defer></script>
+</head>
+<body>
+  <main class="bg-slate-950 w-full h-dvh">
+    <header class="flex justify-between max-w-6xl mx-auto relative py-28">
+
+      <div class="flex flex-row gap-1 items-center">
+        <img class="bg-cover" src="./assets/star.svg" alt="estrela">
+        <h1 class="text-3xl text-white font-bold">GitFav</h1>
+      </div>
+      
+      <div class="gap-2 flex">
+        <input class="w-[29rem] p-4 bg-[#06181C] rounded-md text-white outline-none search" type="text" placeholder="Digite o Github username que quer favoritar">
+        <button class="bg-[#065E7C] py-3 px-8 text-white font-bold hover:scale-105 rounded-md addbtn">
+          <i class="ph ph-star"></i>
+          FAVORITAR
+        </button>
+      </div>
+    </header>
+
+    <div class="max-w-6xl mx-auto">
+
+      <table class=" w-full border border-[#4A808C] rounded flex flex-col">
+        <thead class="bg-[#092D38] flex rounded-t-lg">
+          <tr class="flex justify-between w-full pl-10 py-4 pr-6 text-white text-xl font-bold">
+            <th class="w-[31rem] text-start">Usuário</th>
+            <th class="w-56">Repositories</th>
+            <th class="w-[14rem]">Followers</th>
+            <th class="w-44">Ação</th>
+          </tr>
+        </thead>
+
+        <tbody>
+         
+          <tr class="last-of-type:rounded-b-lg border-b-[#4A808C] border-b flex odd:bg-[#030B0D] even:bg-[#06181C] justify-between text-center pl-10 py-6 pr-6">
+            <td class="flex gap-4 w-[31rem]">
+              <img class="w-14 h-14 rounded-full" src="https://github.com/diego3g.png" alt="">
+              <div class="text-left">
+                <p class="text-xl font-bold text-white">Diego Fernandes</p>
+                <p class="text-xl text-white">/diego3g</p>
+                
+              </div>
+            </td>
+            <td class="w-56 text-xl text-white">123</td>
+            <td class="w-[14rem] text-xl text-white">1234</td>
+            <td class="w-44">
+              <button class="text-xl text-[#F75A68] hover:scale-110">
+                Remover
+              </button>
+          </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </main>
+</body>
+</html>
